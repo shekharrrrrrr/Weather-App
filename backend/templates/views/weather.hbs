@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headlinks}}
+</head>
+
+<body>
+
+    <div class="container">
+
+    {{>header}}
+    
+    {{>navbar}}
+
+    <main >
+        <div class="weatherPage">
+            <img src="./Images/BgOne.jpg" alt="background-img" class="weatherBg">
+            <input type="text" name="" id="input-tag" placeholder="Enter a City name... 🔍">
+
+            <div class="output">
+                <div class="top-layer">
+                    <span class="days">
+                    <h2 id="day">Day</h2>
+                    </span>
+
+                    <span>
+                    <h3 id="date">Date:-</h3>
+                    </span>
+
+                </div>
+
+                <div class="main-Layer">
+                    <p>The city temperature in..</p>
+                    <div class="style-output">
+                        <h3 id="cityName">NULL</h3>
+                        <h2 id="temp">0 <sup>o</sup>C</h2>
+                    </div>
+                </div>
+            </div>
+            <button id="submit-btn">Submit</button>
+        </div>
+    </main>
+    
+    {{>footer}}
+
+    </div>
+
+    <script src="Code/index.js"></script>
+</body>
+
+</html>
